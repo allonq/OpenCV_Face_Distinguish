@@ -1,8 +1,12 @@
 /*
 	This is a project demo finished by using OpenCV 
 	The quality of the recognition is related to the training and testing human picture
-	The face_data are the same as the project coded in matlab
+	The path indicates the path in which training pictures are stored in the format of "i_j.jpg"
+	The targetPath indicates the path in which testing pictures are stored in the format of "i_j.jpg"
+	
+	i represent the ith person
 
+	j represent the jth img of the ith person
 	
 	Author: Yujing Qian
 	UCLA CS 276
@@ -31,7 +35,7 @@ int main()
 	int row = 256; // picture size
 	int col = 256; 
 	string path="c:/..... ";//place to put custom training images
-	string targetPath="";// place tot put testing image;
+	string targetPath="";// place to put testing image;
 
 	int nCorrect = 0; 
 	int nError = 0;
